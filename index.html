@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+        <script type="module"></script>
+    <script  type="text/javascript" src="./index.js"></script>
+  
+    <title>HTML WEATHER TEST</title>
+</head>
+
+<body>
+    <div id="Video">
+        <div id="overlay1" onclick="on()">
+            <p><strong>Check Actually Weather in Argentina</strong></p>
+            <button class="button" onClick="hola()">Click to expand</button>
+        </div>
+        
+        <div id="overlayOff" >
+            <div id="back" onclick="off()"> <--Back</div>
+            <div id="box">
+                <div id="text"></div>
+                <div id="min"><strong>Min°:</strong></div>
+                <div id="max"><strong>Max°:</strong></div>
+                <img id="img" src="http://openweathermap.org/img/wn/10n@2x.png"></img>
+            </div>
+        </div>
+        
+        <video id="myVideo" src="http://static.innovid.com/media/encoded/07_16/22717/11_source_17827_55212.mp4" width=700 height=700
+            controls poster="vistaprevia.jpg">
+        </video>
+            
+    </div>
+</body>
+
+</html>
